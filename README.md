@@ -21,7 +21,8 @@ The data is stored in the different folders. The raw data is stored in raw_data,
 
 # Dependencies
 
-This project requires the libraries to be installed. Run setup.yml to create a conda env with all dependecies. 
+This project requires the libraries to be installed. Run setup.yml to create a conda env with all dependecies.
+conda env create -f setup.yml
 
 # Author
 
