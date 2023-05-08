@@ -1,0 +1,26 @@
+name: airbnb
+channels:
+  - defaults
+dependencies:
+  - python=3.10.10
+  - pip
+  - spacy
+  - pip:
+    - pandas
+    - numpy
+    - scikit-learn
+    - scipy
+    - nltk
+    - plotly
+    - langdetect
+    - transformers
+    - umap-learn
+    - joblib
+    - gensim
+    - pyLDAvis
+    - nbformat
+    - pyarrow
+    - fastparquet
+    - wordcloud
+    - matplotlib
+    - matplotlib.colors

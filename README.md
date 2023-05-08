@@ -11,6 +11,7 @@ The notebooks should be run in the following order:
 3. models/topic_modelling.ipynb: This notebook trains a model to find topics in all the data using gensim.ldamodel.
 4. models/topic_modelling_neg.ipynb: This notebook trains a model to find topics in the data labeled as negative reviews using gensim.ldamodel.
 5. transformation_and_EDA/EDA.ipynb: This notebook performs exploratory data analysis on the cleaned data and generates visualizations to gain insights.
+
 Other notebooks can be run after in any order.
 
 # Data
@@ -20,14 +21,7 @@ The data is stored in the different folders. The raw data is stored in raw_data,
 
 # Dependencies
 
-This project requires the following libraries to be installed:
-
-pandas
-numpy
-matplotlib
-scikit-learn
-nltk
-These can be installed using pip install <library-name> (or pip3 on mac)
+This project requires the libraries to be installed. Run setup.yml to create a conda env with all dependecies. 
 
 # Author
 
