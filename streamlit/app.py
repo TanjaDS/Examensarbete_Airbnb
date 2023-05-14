@@ -14,9 +14,13 @@ def page_topic_neg():
     st.subheader("Interactive Topic Exploration with LDA Visualization on Negative Reviews")
     # Specify the path to your Plotly HTML file
 
-    html_file_path = 'lda_visualization_neg.html'
-    with open(html_file_path, 'r') as file:
-        html_content = file.read()
+    uploaded_file = st.file_uploader(
+    "Choose your database", accept_multiple_files=False)
+    if uploaded_file is not None:
+        html_content = uploaded_file
+    else:
+        html_content = 'lda_visualization_neg.html'
+
     st.components.v1.html(html_content, width=4000, height=10000)
 
 def page_umap():
