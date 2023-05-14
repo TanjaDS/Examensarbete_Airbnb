@@ -24,3 +24,6 @@ dependencies:
     - wordcloud
     - matplotlib
     - matplotlib.colors
+    - streamlit
+    - streamlit_multipage
+    - watchdog
