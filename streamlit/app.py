@@ -1,13 +1,11 @@
 import streamlit as st
-from pathlib import Path
 
-BASE_DIR = Path.cwd().parent
 st.set_page_config(layout="wide")
 
 # Create the first page
 def page_topic():
     st.subheader("Interactive Topic Exploration with LDA Visualization")
-    html_file_path = BASE_DIR / 'models' / 'lda_visualization.html'
+    html_file_path = 'lda_visualization.html'
     with open(html_file_path, 'r') as file:
         html_content = file.read()
     st.components.v1.html(html_content, width=4000, height=10000)
@@ -16,7 +14,7 @@ def page_topic_neg():
     st.subheader("Interactive Topic Exploration with LDA Visualization on Negative Reviews")
     # Specify the path to your Plotly HTML file
 
-    html_file_path = BASE_DIR / 'models' / 'lda_visualization_neg.html'
+    html_file_path = 'lda_visualization_neg.html'
     with open(html_file_path, 'r') as file:
         html_content = file.read()
     st.components.v1.html(html_content, width=4000, height=10000)
@@ -24,7 +22,7 @@ def page_topic_neg():
 def page_umap():
     st.subheader("Interactive UMAP Visualization")
     # Specify the path to your Plotly HTML file
-    html_file_path = BASE_DIR / 'models' / 'umap.html'
+    html_file_path = 'umap.html'
 
     # Read the HTML content
     with open(html_file_path, 'r') as file:
